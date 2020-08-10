@@ -21,7 +21,7 @@ const loginValidation = (data) => {
     password: Joi.string().min(6).required()
   })
   //Validate data before make a user
-  return schema.Validate(data);
+  return schema.validate(data);
   // const {error} = schema.validate(req.body);
   // if (error) return res.status(400).send(error.details[0].message);
 }
